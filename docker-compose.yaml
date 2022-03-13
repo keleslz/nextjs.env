@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    webapp:
+        container_name: landing_page
+        image: node:16
+        ports: 
+            - "3000:3000"   
+        build: . 
+        restart: always
+        volumes:
+            - ./landing_page:/var/www/app
+            - ./landing_page/package.json:/var/www/app/package.json

@@ -1,0 +1,6 @@
+*
+!.dockerignore
+!.gitignore
+!*.yaml
+!Dockerfile
+!README.md
